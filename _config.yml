@@ -7,6 +7,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jurc192
 
 navbar_pages:
-  - projects.md
+  - projects.html
   - blog.md
   - about.md

@@ -1,0 +1,13 @@
+---
+title: projects
+permalink: /projects/
+layout: default
+---
+
+<!-- List all projects -->
+{% for p in site.pages %}
+    {% if p.project %}
+    <h1><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h1>    
+    <p>{{ p.summary }}</p>
+    {% endif%}
+{% endfor %}

@@ -2,6 +2,7 @@
 layout: post
 title: A dive into the CD-drive!
 date: 2021-02-23 14:30:02 +0100
+excerpt_separator: <!--more-->
 ---
 
 I started with exploring my CD - drive. How does it work, how do I control it and what does it output? The "how does it work" part you can find easily, if you know how to open google and search for it. I won't go into this here.
@@ -21,6 +22,8 @@ Thing about the power supply that bothered me was: do I need both 12V and 5V sup
 
 I noticed that there already is an audio output connector (link). And some of my CD - drives even have two of them, digital and analog one. This means I could hook an amplifier directly to the drive, without having to deal with digital to analog conversion (the part which I'm "afraid" the most - have the least knowledge) -yay! :D
 
+
+<!--more-->
 
 ## SLAVES AND MASTERS CONNECTOR
 
