@@ -14,6 +14,3 @@ There are many people saying that it's not worth building such thing, but I say 
 Re-using old electronic devices is best way to reduce e-waste and to learn about technology. 
 Also your CDs become a little less useless :)
 
-
-## Gallery?
-Blabla
