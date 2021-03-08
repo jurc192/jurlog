@@ -1,4 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .site-content {
+    flex: 1;
     max-width: 600px;   // Minima theme (in poole, 45rem is used)
     padding: 0 var(--content-padding);
     margin: 0 auto;
@@ -7,10 +14,6 @@
 /* 
     Navbar stuff 
 */
-.site-header {
-    width: 100%;
-}
-
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -89,4 +92,20 @@ article time {
 
 .readmore {
     color: var(--accent);
+}
+
+
+/*
+    Footer
+*/
+.site-footer {
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    height: 100px;
+    color: var(--accent);
+    background-color: var(--primary-80);
 }
