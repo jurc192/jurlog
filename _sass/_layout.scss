@@ -1,5 +1,6 @@
 .site-content {
     max-width: 600px;   // Minima theme (in poole, 45rem is used)
+    padding: 0 var(--content-padding);
     margin: 0 auto;
 }
 
@@ -8,13 +9,12 @@
 */
 .site-header {
     width: 100%;
-    background: red;
 }
 
 .wrapper {
     max-width: 1200px;
-    background: green;
     margin: 0 auto;
+    padding: 0 var(--content-padding);
     display: flex;
 }
 
@@ -33,15 +33,19 @@
     display: none;
 }
 
+.navbar li {
+    padding: 0 15px;
+}
+
 
 /* Mobile navigation menu */
 @media all and (max-width: 800px) {
     .wrapper {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .menu-btn {
         display: inline-block;
-        flex-shrink: 0;
     }
     #menu-btn:not(:checked) ~ .navbar {
         display: none;
@@ -56,5 +60,8 @@
     .navbar * {
         width: 100%;
         text-align: center;
+    }
+    .breadcrumbs {
+        display: none;
     }
 }
