@@ -65,3 +65,28 @@
         display: none;
     }
 }
+
+
+
+/*
+    Article
+*/
+article {
+    margin: 4rem 0;
+}
+
+article h1 {
+    margin: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+article time {
+    color: var(--primary-30);
+}
+
+.readmore {
+    color: var(--accent);
+}

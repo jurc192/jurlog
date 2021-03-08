@@ -9,5 +9,6 @@ layout: default
         <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
         {{ post.excerpt }}
+        <a class="readmore" href="{{ post.url | relative_url }}">Read more >></a>
     </article>
 {% endfor %}
