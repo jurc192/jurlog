@@ -8,5 +8,12 @@ github_username:  jurc192
 
 navbar_pages:
   - projects.html
-  - blog.md
+  - blog.html
   - about.md
+
+
+defaults:
+  - scope: 
+      path: "_posts"
+    values:
+      category: "blog"
