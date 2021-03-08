@@ -36,6 +36,9 @@
 
 /* Mobile navigation menu */
 @media all and (max-width: 800px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
     .menu-btn {
         display: inline-block;
         flex-shrink: 0;
@@ -43,20 +46,15 @@
     #menu-btn:not(:checked) ~ .navbar {
         display: none;
     }
-    #menu-btn:checked ~ .navbar ul {
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
-        background: white;
+    #menu-btn:checked ~ .navbar {
+        display: inline-block;
     }
 
-    .site-header {
-        flex-wrap: wrap;
-    }
     .navbar {
-        width: 100%;
+        flex-basis: 100%;
     }
-    .navbar ul {
-        flex-direction: column;
+    .navbar * {
+        width: 100%;
+        text-align: center;
     }
 }
