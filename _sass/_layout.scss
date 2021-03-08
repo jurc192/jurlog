@@ -12,8 +12,11 @@ body {
 }
 
 /* 
-    Navbar stuff 
+    Header stuff 
 */
+.site-header {
+    margin-bottom: 2rem;
+}
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -95,6 +98,15 @@ article time {
 }
 
 
+
+/*
+    Project
+*/
+.project p {
+    color: var(--primary-30);
+}
+
+
 /*
     Footer
 */
@@ -102,9 +114,9 @@ article time {
     // position: absolute;
     // bottom: 0;
     // width: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     color: var(--accent);
     background-color: var(--primary-80);
