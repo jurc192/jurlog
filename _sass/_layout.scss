@@ -1,28 +1,28 @@
-body {
-    min-height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
 .site-content {
     max-width: 600px;   // Minima theme (in poole, 45rem is used)
     margin: 0 auto;
 }
 
-
 /* 
     Navbar stuff 
 */
 .site-header {
-    height: 100px;
+    width: 100%;
+    background: red;
+}
+
+.wrapper {
+    max-width: 1200px;
+    background: green;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
 }
-.site-header * {
+
+.wrapper * {
     display: inline-block;
-    line-height: 100px;         // SAME AS NAVBAR HEIGHT
+    line-height: var(--header-height);
 }
+
 .breadcrumbs {
     flex: 1;
     padding: 0 30px;
@@ -30,21 +30,9 @@ body {
 }
 
 #menu-btn, .menu-btn {
-    display: none;  // Hamburger menu checkbox (never visible)
+    display: none;
 }
 
-.navbar ul {
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.navbar li {
-    display: inline-block;
-    padding: 0 15px;
-}
 
 /* Mobile navigation menu */
 @media all and (max-width: 800px) {
@@ -55,7 +43,7 @@ body {
     #menu-btn:not(:checked) ~ .navbar {
         display: none;
     }
-    #menu-btn:checked ~ .navbar {
+    #menu-btn:checked ~ .navbar ul {
         display: flex;
         flex-direction: column;
         z-index: 1;

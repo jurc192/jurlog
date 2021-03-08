@@ -1,0 +1,97 @@
+.site-content {
+    max-width: 600px;   // Minima theme (in poole, 45rem is used)
+    margin: 0 auto;
+}
+
+
+/* 
+    Navbar stuff 
+*/
+.site-header {
+    width: 100%;
+    background: red;
+}
+.wrapper {
+    height: var(--header-height);
+    max-width: 1200px;
+    background: green;
+    margin: 0 auto;
+}
+.wrapper * {
+    display: inline-block;
+    line-height: var(--header-height);
+}
+
+.breadcrumbs {
+    position: absolute;
+}
+
+#menu-btn, .menu-btn {
+    display: none;
+}
+
+.navbar {
+    float: right;
+}
+
+@media all and (max-width: 800px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
+// .site-header {
+//     height: 100px;
+//     display: flex;
+//     flex-direction: row;
+// }
+// .site-header * {
+//     display: inline-block;
+//     line-height: 100px;         // SAME AS NAVBAR HEIGHT
+// }
+// .breadcrumbs {
+//     flex: 1;
+//     padding: 0 30px;
+
+// }
+
+
+// .navbar ul {
+//     margin: 0;
+//     padding: 0;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+// }
+// .navbar li {
+//     display: inline-block;
+//     padding: 0 15px;
+// }
+
+// /* Mobile navigation menu */
+// @media all and (max-width: 800px) {
+//     .menu-btn {
+//         display: inline-block;
+//         flex-shrink: 0;
+//     }
+//     #menu-btn:not(:checked) ~ .navbar {
+//         display: none;
+//     }
+//     #menu-btn:checked ~ .navbar {
+//         display: flex;
+//         flex-direction: column;
+//         z-index: 1;
+//         background: white;
+//     }
+
+//     .site-header {
+//         flex-wrap: wrap;
+//     }
+//     .navbar {
+//         width: 100%;
+//     }
+//     .navbar ul {
+//         flex-direction: column;
+//     }
+// }
