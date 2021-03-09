@@ -94,10 +94,10 @@ article time {
 }
 
 .readmore {
-    color: var(--accent);
+    padding: 3px;
+    color: var(--background);
+    background-color: var(--accent);
 }
-
-
 
 /*
     Project
@@ -108,12 +108,35 @@ article time {
 
 
 /*
+    Blog
+*/
+.blogpost-list {
+    list-style: none;
+}
+
+.blogpost-list li {
+    display: flex;
+    padding: 5px 0;
+}
+
+.blogpost-header {
+    margin-bottom: 20px;
+}
+
+.blogpost-list li :nth-child(1) {
+    flex: 0 0 150px;
+}
+.blogpost-list li :nth-child(2) {
+    flex: 0 0 150px;
+}
+.blogpost-list li :nth-child(3) {
+    flex: 1 0 auto;
+}
+
+/*
     Footer
 */
 .site-footer {
-    // position: absolute;
-    // bottom: 0;
-    // width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

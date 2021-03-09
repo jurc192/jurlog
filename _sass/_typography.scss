@@ -44,3 +44,22 @@ small, .text_small {font-size: 0.833rem;}
 .project h1 {
     font-size: 1.728rem;
 }
+
+
+/*
+    Blogpost header
+*/
+.blogpost-list {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.blogpost-header * {
+    color: var(--primary);
+}
+.blogpost-list li {
+    color: var(--primary-30);
+}
+.blogpost-list li a {
+    font-weight: 700;
+    // font-weight: bold;
+}
