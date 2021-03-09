@@ -110,6 +110,10 @@ article time {
 /*
     Blog
 */
+.site-content.blog {
+    max-width: 800px;
+}
+
 .blogpost-list {
     list-style: none;
 }
@@ -117,6 +121,7 @@ article time {
 .blogpost-list li {
     display: flex;
     padding: 5px 0;
+    // width: 100%;
 }
 
 .blogpost-header {
@@ -130,7 +135,7 @@ article time {
     flex: 0 0 150px;
 }
 .blogpost-list li :nth-child(3) {
-    flex: 1 0 auto;
+    flex: 1 0 0;
 }
 
 /*

@@ -21,7 +21,7 @@
       </div>
     </header>
 
-    <main class="site-content {{ page.title }}">
+    <main class="site-content {{ page.title | slugify }}">
         {{ content }}
     </main>
 
