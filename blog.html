@@ -42,5 +42,15 @@ permalink: /blog/
                 <td>{{ category }}</td>
             </tr>    
         {% endfor %}    
+
+        {% for p in site.posts %}
+        {% assign timestamp = p.date | date: "%d.%m.%Y" %}
+        {% assign category = p.categories | where_exp: "item", "item != 'projects'" %}
+            <tr>
+                <td>{{ timestamp }}</td>
+                <td><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
+                <td>{{ category }}</td>
+            </tr>    
+        {% endfor %}  
     </tbody>
 </table>
