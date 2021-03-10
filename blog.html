@@ -4,25 +4,7 @@ title: blog
 permalink: /blog/
 ---
 
-<!-- List all blogposts  -->
-<!-- <ul class="blogpost-list">
-    <li class="blogpost-header">
-        <span>timestamp</span>
-        <span>module</span>
-        <span>title</span>
-    </li>
-
-    {% for p in site.posts %}
-    {% assign timestamp = p.date | date: "%d.%m.%Y" %}
-    {% assign category = p.categories | where_exp: "item", "item != 'projects'" %}
-        <li>
-            <span>{{ timestamp }}</span>
-            <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-            <span>{{ category }}</span>
-        </li>
-    {% endfor %}
-</ul> -->
-
+<!-- Table of all posts -->
 <table class="bloglist">
     <thead>
         <tr>

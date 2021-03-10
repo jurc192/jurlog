@@ -3,6 +3,7 @@ title: Using CD-drive as a music player
 summary: This is just a short description of the cd-drive project, very nice.
 project: cd-drive
 layout: project
+permalink: /projects/cd-drive/
 ---
 
 # Using CD-drive as a music player
