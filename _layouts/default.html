@@ -7,7 +7,10 @@
     <header class="site-header">
       <div class="wrapper">
         <a class="logo" href="{{ '/' | relative_url }}">>Jur.log</a>
-        <span class="breadcrumbs">~{{ page.url }}</span>
+        <span class="breadcrumbs">
+            <a href="/">~</a>
+            {% include breadcrumbs.html %}
+        </span>
         <input id="menu-btn" type="checkbox">
         <label class="menu-btn" for="menu-btn">BURGER</label>
         <nav class="navbar">

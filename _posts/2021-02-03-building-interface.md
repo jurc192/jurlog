@@ -1,6 +1,5 @@
 ---
 title: Building the interface v0.1
-date: 2021-02-23 11:30:02 +0100
 layout: post
 ---
 
