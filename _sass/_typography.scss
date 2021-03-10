@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* https://type-scale.com/, major third scale (1.200)  */
-// h1 {font-size: 2.488rem;}
 h1 {font-size: 2.074rem;}
 h2 {font-size: 1.728rem;}
 h3 {font-size: 1.44rem;}
@@ -49,7 +48,7 @@ small, .text_small {font-size: 0.833rem;}
 /*
     Blogpost header
 */
-.blogpost-list {
+.blogpost-list a {
     font-family: 'IBM Plex Mono', monospace;
 }
 

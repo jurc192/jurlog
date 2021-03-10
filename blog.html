@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <!-- List all blogposts  -->
-<ul class="blogpost-list">
+<!-- <ul class="blogpost-list">
     <li class="blogpost-header">
         <span>timestamp</span>
         <span>module</span>
@@ -16,9 +16,31 @@ permalink: /blog/
     {% assign timestamp = p.date | date: "%d.%m.%Y" %}
     {% assign category = p.categories | where_exp: "item", "item != 'projects'" %}
         <li>
-            <span>[{{ timestamp }}]</span>
-            <span>{{ category }}</span>
+            <span>{{ timestamp }}</span>
             <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            <span>{{ category }}</span>
         </li>
     {% endfor %}
-</ul>
+</ul> -->
+
+<table class="bloglist">
+    <thead>
+        <tr>
+            <th scope="col">timestamp</th>
+            <th scope="col">title</th>
+            <th scope="col">category</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for p in site.posts %}
+        {% assign timestamp = p.date | date: "%d.%m.%Y" %}
+        {% assign category = p.categories | where_exp: "item", "item != 'projects'" %}
+            <tr>
+                <td>{{ timestamp }}</td>
+                <td><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
+                <td>{{ category }}</td>
+            </tr>    
+        {% endfor %}    
+    </tbody>
+</table>
