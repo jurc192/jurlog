@@ -6,7 +6,6 @@ layout: project
 permalink: /projects/cd-drive/
 ---
 
-# Using CD-drive as a music player
 ## Overview
 
 Using an old CD-drive as a "standalone" CD-player controlled by a microcontroller. 
