@@ -1,9 +1,16 @@
 <!-- Taken and modified from: https://jekyllcodex.org/without-plugin/breadcrumbs/ -->
 {% assign crumbs = page.url | split: '/' %}
+{% if crumbs[1] == "blog" %}
+    {% assign climit = 2 %}     <!-- hide long blogpost urls -->
+{% else %}
+    {% assign climit = 3 %}
+{% endif %}
+
 {% for crumb in crumbs offset: 1 %}
-  {% if forloop.last %}
-    /{{ page.title | downcase | slugify }}
-  {% else %}
-    <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">/{{ crumb }}</a>
-  {% endif %}
+    {% if forloop.index < climit %}
+        <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">/{{ crumb }}</a>
+    {% endif %}
 {% endfor %}
+{% if crumbs.size > climit %}
+    <a href="#">/...</a>
+{% endif %}
