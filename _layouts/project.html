@@ -9,7 +9,8 @@ layout: default
 <!-- Find all project logs -->
 {% assign logs = site.posts | where_exp: "item", "item.categories contains page.project" %}
 {% if logs.size > 0 %}
-    <h1>Project logs</h1>
+    <h2>Project logs</h2>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 {% endif %}
 {% for l in logs %}
     <article>
