@@ -23,19 +23,34 @@ body {
     text-decoration: none;
     list-style: none;
 }
-
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
+        max-width: $header-max-width;
+
         padding: 0 $content-padding;
+        margin: 0 auto;
     }
-
         .breadcrumbs {
-            display: none;
+            // Hide, but use as a spacer between the logo and burger menu
+            visibility: hidden;
+            flex: 1;
+        }
+        .menu-btn-cb {
+            display: none;      // Hide checkbox
+        }
+        .navbar {
+            width: 100%;
+            text-align: center;
+        }
+        .navbar ul {
+            padding: 0;
+        }
+        .navbar a {
+            display: block;
+            line-height: 4rem;
         }
 
-        .menu-btn-cb {
-            display: none;
-        }
 // html {
 //     font-size: 100%;    // use browser default font size
 // }
