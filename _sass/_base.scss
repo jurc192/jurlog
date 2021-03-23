@@ -1,5 +1,5 @@
 /*
-    PAGE LAYOUT
+    GENERAL LAYOUT
 */
 body {
     display: flex;
@@ -23,9 +23,19 @@ body {
     text-decoration: none;
     list-style: none;
 }
-.menu-btn-cb {
-    display: none;
-}
+
+    .wrapper {
+        display: flex;
+        padding: 0 $content-padding;
+    }
+
+        .breadcrumbs {
+            display: none;
+        }
+
+        .menu-btn-cb {
+            display: none;
+        }
 // html {
 //     font-size: 100%;    // use browser default font size
 // }
