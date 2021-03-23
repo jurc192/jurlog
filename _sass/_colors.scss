@@ -1,0 +1,29 @@
+/*
+    GENERAL
+*/
+body {
+    color: $primary;
+    background-color: $background;
+}
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus {
+    // `:focus` is linked to `:hover` for basic accessibility
+    color: $primary;
+  }
+  strong {color: inherit;}
+}
+
+
+/*
+    HEADER
+*/
+.site-header {
+    background-color: $primary-lighter;
+}
+
+.site-header a {
+    color: $accent;
+}
