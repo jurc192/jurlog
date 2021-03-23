@@ -9,48 +9,89 @@ body {
 
 .site-content {
     flex: 1;
+    max-width: $content-max-width;
     padding: 0 $content-padding;
     margin: 0 auto;
-    max-width: $content-max-width;
+}
+
+.site-header .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $header-max-width;
+    padding: 0 $content-padding;
+    margin: 0 auto;
+    line-height: $header-height;
 }
 
 
 /*
     HEADER
 */
+// MOBILE LAYOUT
 .site-header * {
     // Clear default styling for <li> and <a>
     text-decoration: none;
     list-style: none;
 }
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: $header-max-width;
 
-        padding: 0 $content-padding;
-        margin: 0 auto;
+    .breadcrumbs {
+        // Hide, but use as a spacer between the logo and burger menu
+        visibility: hidden;
+        flex: 1;
     }
-        .breadcrumbs {
-            // Hide, but use as a spacer between the logo and burger menu
-            visibility: hidden;
-            flex: 1;
-        }
-        .menu-btn-cb {
-            display: none;      // Hide checkbox
-        }
-        .navbar {
-            width: 100%;
-            text-align: center;
-        }
+
+    // Menu toggling logic (using checkbox)
+    #menu-btn:not(:checked) ~ .navbar {
+        display: none;
+    }
+    .menu-btn-cb {
+        display: none;      // Hide checkbox
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
         .navbar ul {
             padding: 0;
         }
         .navbar a {
             display: block;
-            line-height: 4rem;
+            padding: 0 1rem;
         }
 
+
+// MONITOR LAYOUT
+@media (min-width: $content-max-width) {     // WHEN TO BREAK ?
+    
+    
+    .site-header .wrapper {
+        flex-wrap: nowrap;
+    }
+
+        .breadcrumbs {
+            visibility: visible;
+        }
+
+        // Show menu horizontally
+        #menu-btn:not(:checked) ~ .navbar {
+            display: block;
+        }
+        .menu-btn {
+            display: none;
+        }
+
+        .navbar {
+            width: auto;
+            text-align: left;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+
+}
 // html {
 //     font-size: 100%;    // use browser default font size
 // }

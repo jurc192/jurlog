@@ -1,5 +1,5 @@
 :root {
-    --header-height: 100px;
+    // --header-height: 100px;
     // --content-padding: 1.2rem;
     // --content-max-width: 500px;  // approx. 65 characters   
 
@@ -12,6 +12,7 @@
 }
 
 // Layout
+$header-height: 4rem;
 $header-max-width: 1200px;
 $content-padding: 1.2rem;
 $content-max-width: 500px;
