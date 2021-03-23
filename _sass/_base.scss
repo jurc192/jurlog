@@ -30,13 +30,11 @@ body {
 .site-header {
     margin-bottom: $content-padding;
 }
-
 .site-header * {
     // Clear default styling for <li> and <a>
     text-decoration: none;
     list-style: none;
 }
-
     .breadcrumbs {
         // Hide, but use as a spacer between the logo and burger menu
         visibility: hidden;
@@ -85,18 +83,17 @@ body {
             width: auto;
             text-align: left;
         }
-
-        .navbar li {
-            display: inline-block;
-        }
+            .navbar li {
+                display: inline-block;
+            }
 }
 
 
 /*
-    PAGE ELEMENTS
+    ELEMENTS GENERAL
 */
 article {
-    padding: $content-padding;
+    padding: $content-padding 0;
 }
 
 h1, 
@@ -105,6 +102,50 @@ h3,
 h4 {
     margin: 2rem 0 1rem 0;
 }
+
+p {
+    margin: 1rem 0;
+}
+
+
+/*
+    PROJECTS
+*/
+
+
+/*
+    BLOG
+*/
+// Desktop-implementation first (exceptionally), easier to implement
+@media (max-width: $content-max-width) {        // MOBILE
+    .bloglist * {
+        // Collapse rows in mobile layout
+        display: block;
+    }
+    .bloglist thead {
+        display: none;
+    }
+
+    .bloglist tr {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $content-padding 0;
+    }
+
+    // Change element order: date and category below title
+    .bloglist tr :nth-child(1) {
+        order: 2;
+    }
+    .bloglist tr :nth-child(2) {
+        order: 1;
+        width: 100%;
+    }
+    .bloglist tr :nth-child(3) {
+        order: 3;
+    }
+}
+
+
 
 // html {
 //     font-size: 100%;    // use browser default font size

@@ -1,15 +1,3 @@
-:root {
-    // --header-height: 100px;
-    // --content-padding: 1.2rem;
-    // --content-max-width: 500px;  // approx. 65 characters   
-
-    // --primary: #001824;
-    // --accent: #e4b062;
-    // --background: #F6F4F3;
-
-    --primary-80: #31444d;
-    --primary-30: #acb2b5;
-}
 
 // Layout
 $header-height: 5rem;
@@ -17,9 +5,10 @@ $header-max-width: 1200px;
 $content-padding: 1.2rem;
 $content-max-width: 550px;
 
-// Color pallette
+// Color palette
 $primary: #001824;
 $accent: #e4b062;
 $background: #f6f4f3;
 
-$primary-lighter: #31444d;
+$primary-light: #31444d;
+$primary-light: #acb2b5;
