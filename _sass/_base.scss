@@ -17,6 +17,7 @@ body {
 .site-header .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     max-width: $header-max-width;
     padding: 0 $content-padding;
     margin: 0 auto;
@@ -37,9 +38,9 @@ body {
 }
     .breadcrumbs {
         // Hide, but use as a spacer between the logo and burger menu
-        visibility: hidden;
+        display: none;
         flex: 1;
-        padding: 0 $content-padding;
+        padding: 0 1rem 0 2rem;
     }
 
     // Menu toggling logic (using checkbox)
@@ -47,44 +48,43 @@ body {
         display: none;
     }
     .menu-btn-cb {
-        display: none;      // Hide checkbox
+        display: none;      // Hide checkbox element
     }
 
+    // Vertical navbar
     .navbar {
         width: 100%;
         text-align: center;
     }
         .navbar ul {
+            display: flex;
+            flex-direction: column;
             padding: 0;
         }
         .navbar a {
-            display: block;
+            display: block;     // Fill the container
             padding: 0 1rem;
         }
 
-@media (min-width: $content-max-width) {     // DESKTOP SIZE
+@media (min-width: 900px) {     // DESKTOP SIZE
     
     .site-header .wrapper {
         flex-wrap: nowrap;
     }
         .breadcrumbs {
-            visibility: visible;
-        }
-
-        // Show menu horizontally
-        #menu-btn:not(:checked) ~ .navbar {
-            display: block;
+            display: flex;
         }
         .menu-btn {
             display: none;
         }
 
+        // Horizontal navbar
         .navbar {
+            display: block;
             width: auto;
-            text-align: left;
         }
-            .navbar li {
-                display: inline-block;
+            .navbar ul {
+                flex-direction: row;
             }
 }
 
