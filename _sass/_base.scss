@@ -37,10 +37,7 @@ body {
     list-style: none;
 }
     .breadcrumbs {
-        // Hide, but use as a spacer between the logo and burger menu
         display: none;
-        flex: 1;
-        padding: 0 1rem 0 2rem;
     }
 
     // Menu toggling logic (using checkbox)
@@ -73,14 +70,18 @@ body {
     }
         .breadcrumbs {
             display: flex;
+            flex: 1;
+            padding: 0 1rem 0 2rem;
         }
         .menu-btn {
             display: none;
         }
 
         // Horizontal navbar
-        .navbar {
+        #menu-btn:not(:checked) ~ .navbar {
             display: block;
+        }
+        .navbar {
             width: auto;
         }
             .navbar ul {
