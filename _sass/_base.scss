@@ -17,7 +17,6 @@ body {
 .site-header .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-width: $header-max-width;
     padding: 0 $content-padding;
     margin: 0 auto;
@@ -37,7 +36,10 @@ body {
     list-style: none;
 }
     .breadcrumbs {
-        display: none;
+        // Hide, but use as a spacer between the logo and burger menu
+        visibility: hidden;
+        flex: 1;
+        padding: 0 $content-padding;
     }
 
     // Menu toggling logic (using checkbox)
@@ -66,8 +68,7 @@ body {
         flex-wrap: nowrap;
     }
         .breadcrumbs {
-            display: flex;
-            max-width: 500px;
+            visibility: visible;
         }
 
         // Show menu horizontally
@@ -81,7 +82,6 @@ body {
         .navbar {
             width: auto;
             text-align: left;
-            white-space: nowrap;
         }
             .navbar li {
                 display: inline-block;
