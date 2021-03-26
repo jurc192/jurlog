@@ -117,7 +117,7 @@ article {
 
 
 /*
-    PROJECTS
+    PROJECTS PAGE
 */
 .site-content.projects {
     padding: 3rem $content-padding;
@@ -129,12 +129,34 @@ article {
 
 
 /*
-    BLOG
+    BLOG PAGE
 */
-// Desktop-implementation first (exceptionally), easier to implement
-@media (max-width: $content-max-width) {        // MOBILE
+// This CSS part is exceptionally implemented desktop-first (easier)
+.site-content.blog {
+    max-width: $content-wide-max-width;
+}
+
+.bloglist {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 4rem 0;
+    text-align: left;
+}
+
+    $cell-padding-h: 0.8rem;
+    .bloglist th {
+        padding: 2rem $cell-padding-h;
+    }
+
+    .bloglist td {
+        padding: 0.4rem $cell-padding-h;
+    }
+
+
+
+// MOBILE LAYOUT (collapsed table)
+@media (max-width: $content-max-width) {
     .bloglist * {
-        // Collapse rows in mobile layout
         display: block; 
     }
     .bloglist thead {
@@ -144,6 +166,7 @@ article {
     .bloglist tr {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         padding: $content-padding 0;
     }
 
@@ -197,29 +220,29 @@ article {
 //   border-radius: var(--border-radius);
 // }
 
-// // table {
-// //   margin-bottom: 1rem;
-// //   width: 100%;
-// //   border: 0 solid var(--border-color);
-// //   border-collapse: collapse;
-// // }
+// table {
+//   margin-bottom: 1rem;
+//   width: 100%;
+//   border: 0 solid var(--border-color);
+//   border-collapse: collapse;
+// }
 
-// // td,
-// // th {
-// //   padding: .25rem .5rem;
-// //   border-color: inherit;
-// //   border-style: solid;
-// //   border-width: 0;
-// //   border-bottom-width: 1px;
-// // }
+// td,
+// th {
+//   padding: .25rem .5rem;
+//   border-color: inherit;
+//   border-style: solid;
+//   border-width: 0;
+//   border-bottom-width: 1px;
+// }
 
-// // th {
-// //   text-align: left;
-// // }
+// th {
+//   text-align: left;
+// }
 
-// // thead th {
-// //   border-bottom-color: currentColor;
-// // }
+// thead th {
+//   border-bottom-color: currentColor;
+// }
 
 // mark {
 //   padding: .15rem;

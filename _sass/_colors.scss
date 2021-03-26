@@ -25,22 +25,6 @@ p a {       // Links within a text
     }
 }
 
-
-/*
-    HEADER
-*/
-.site-header {
-    background: $primary-light1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-    .site-header a {
-        color: $accent;
-    }
-
-/*
-    ARTICLE (blogpost on homepage and projects)
-*/
 article time {
     color: $primary-light2;
 }
@@ -55,13 +39,34 @@ article time {
     }
 }
 
+
+/*
+    HEADER
+*/
+.site-header {
+    background: $primary-light1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+    .site-header a {
+        color: $accent;
+    }
+
 /*
     HOME PAGE
 */
 
 /*
-    PROJECTS
+    PROJECTS PAGE
 */
 .project-tile p {
     color: $primary-light2;
+}
+
+/*
+    BLOG PAGE
+*/
+.bloglist td:nth-child(1),
+.bloglist td:nth-child(3) {
+    color: $primary-light2;   
 }
