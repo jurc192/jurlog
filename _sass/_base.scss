@@ -134,12 +134,12 @@ article {
 // This CSS part is exceptionally implemented desktop-first (easier)
 .site-content.blog {
     max-width: $content-wide-max-width;
+    padding: 3rem $content-padding;
 }
 
 .bloglist {
     table-layout: fixed;
     border-collapse: collapse;
-    margin: 4rem 0;
     text-align: left;
 }
 
