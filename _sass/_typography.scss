@@ -28,6 +28,10 @@ p {
     text-align: justify;
 }
 
+.readmore {
+    font-weight: bold;
+}
+
 
 /*
     HEADER
@@ -41,45 +45,18 @@ p {
     white-space: nowrap;
 }
 
+
 /*
-    ARTICLE
+    PROJECT PAGE
 */
-.readmore {
+.project > h1 {
+    font-size: 2.488rem;
+    text-align: center;
+}
+.project > h2 {
+    font-size: 1rem;
     font-weight: bold;
 }
-
-// /* 
-//     Header stuff 
-// */
-// .site-header {
-//     font-family: 'IBM Plex Mono', monospace;
-//     font-weight: 700;
-// }
-// .site-header a {
-//     text-decoration: none;
-// }
-// .logo, .breadcrumbs {
-//     font-size: 2.074rem;
-//     white-space: nowrap;
-// }
-
-// .navbar{
-//     font-size: 1rem;
-// }
-
-
-
-// /*
-//     Project layout
-// */
-// .project > h1 {
-//     font-size: 2.488rem;
-//     text-align: center;
-// }
-// .project > h2 {
-//     font-size: 1rem;
-//     font-weight: bold;
-// }
 
 
 // /*

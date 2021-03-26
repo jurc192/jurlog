@@ -16,6 +16,15 @@ a {
   strong {color: inherit;}
 }
 
+p a {       // Links within a text
+    color: $accent;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $accent;
+    }
+}
+
 
 /*
     HEADER
@@ -25,9 +34,9 @@ a {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.site-header a {
-    color: $accent;
-}
+    .site-header a {
+        color: $accent;
+    }
 
 /*
     ARTICLE (blogpost on homepage and projects)
