@@ -30,5 +30,18 @@ a {
 }
 
 /*
-    HOME PAGE
+    ARTICLE (blogpost on homepage and projects)
 */
+article time {
+    color: $primary-light2;
+}
+
+.readmore {
+    color: $background;
+    background: $accent;
+
+    &:hover,
+    &:focus {
+        color: $primary;
+    }
+}
