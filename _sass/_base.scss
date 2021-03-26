@@ -121,7 +121,7 @@ p {
 @media (max-width: $content-max-width) {        // MOBILE
     .bloglist * {
         // Collapse rows in mobile layout
-        display: block;
+        display: block; 
     }
     .bloglist thead {
         display: none;
