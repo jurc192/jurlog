@@ -53,17 +53,29 @@ article {
         margin-top: 0.7rem;
     }
 
-img {
-    width: 100%;
-}
 
-@media (min-width: $content-max-width) {     // DESKTOP SIZE
-    img {
+img {
+    max-width: 100%;
+    @media (min-width: $content-max-width) {     // DESKTOP SIZE
         // Taken from https://stackoverflow.com/a/36530632/5539470
+        width: 100vw;
+        max-width: 800px;
+        padding: $content-padding;
         margin-left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+
+// Gallery stuff
+.project-gallery {
+    @media (min-width: $content-max-width) {     // DESKTOP SIZE
+        // Taken from https://stackoverflow.com/a/36530632/5539470
+        width: 100vw;
         max-width: 800px;
-        height: 400px;
+        padding: $content-padding;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 
