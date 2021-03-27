@@ -39,6 +39,9 @@ p {
     margin: 1rem 0;
 }
 
+img {
+    max-width: 100%;
+}
 
 article {
     padding: $content-padding 0;
@@ -53,9 +56,10 @@ article {
         margin-top: 0.7rem;
     }
 
-
-img {
-    max-width: 100%;
+/*
+    Utilities
+*/
+.wider {
     @media (min-width: $content-max-width) {     // DESKTOP SIZE
         // Taken from https://stackoverflow.com/a/36530632/5539470
         width: 100vw;
@@ -67,16 +71,33 @@ img {
 }
 
 
-// Gallery stuff
-.project-gallery {
-    @media (min-width: $content-max-width) {     // DESKTOP SIZE
-        // Taken from https://stackoverflow.com/a/36530632/5539470
-        width: 100vw;
-        max-width: 800px;
-        padding: $content-padding;
-        margin-left: 50%;
-        transform: translateX(-50%);
+/* 
+    Gallery stuff 
+*/
+@media (min-width: $content-max-width) {     // DESKTOP SIZE
+    .project-gallery {
+        // // Taken from https://stackoverflow.com/a/36530632/5539470
+        // width: 100vw;
+        // max-width: 800px;
+        // padding: $content-padding;
+        // margin-left: 50%;
+        // transform: translateX(-50%);
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px 12px;
+        grid-template-areas:
+          "img1 img1 img1 img2"
+          "img1 img1 img1 img3"
+          "img1 img1 img1 img4"
+          "img1 img1 img1 img5";
     }
+    img:nth-of-type(1) { grid-area: img1; }
+    img:nth-of-type(2) { grid-area: img2; }
+    img:nth-of-type(3) { grid-area: img3; }
+    img:nth-of-type(4) { grid-area: img4; }
+    img:nth-of-type(5) { grid-area: img5; }
 }
 
 

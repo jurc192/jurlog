@@ -1,5 +1,5 @@
 <!-- Taken and adapted from: https://jekyllcodex.org/without-plugin/image-gallery -->
-<div class="project-gallery">
+<div class="project-gallery wider">
     {% for file in site.static_files %}
       {% if file.path contains include.folder %}
         {% if file.extname == '.jpg' or 
