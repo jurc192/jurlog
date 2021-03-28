@@ -1,3 +1,7 @@
+/*
+    LAYOUT
+*/
+// Site-wide
 body {
     display: flex;
     flex-direction: column;
@@ -6,186 +10,195 @@ body {
 
 .site-content {
     flex: 1;
-    max-width: var(--content-max-width);
     padding: 0 var(--content-padding);
     margin: 0 auto;
-}
-@media (max-width: 500px) {     // CAN'T USE CSS VARIABLE HERE: --content-max-width
-    .site-content {margin: 0;}  // Fixing overflows on small screens
-}
-
-
-/* 
-    Header stuff 
-*/
-.site-header {
-    margin-bottom: 2rem;
-}
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--content-padding);
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.wrapper * {
-    display: inline-block;
-    line-height: var(--header-height);
-}
-
-.breadcrumbs {
-    flex: 1 0 0;
-    padding: 0 30px;
-    display: flex;
-    overflow: hidden;
-}
-
-#menu-btn, .menu-btn {
-    display: none;
-}
-
-
-.navbar {
-    flex: 0 0 auto;
-}
-
-.navbar li {
-    padding: 0 15px;
-}
-
-
-/* Mobile navigation menu */
-@media all and (max-width: 800px) {
-    .wrapper {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .menu-btn {
-        display: inline-block;
-    }
-    #menu-btn:not(:checked) ~ .navbar {
-        display: none;
-    }
-    #menu-btn:checked ~ .navbar {
-        display: inline-block;
-    }
-
-    .navbar {
-        flex-basis: 100%;
-    }
-    .navbar * {
-        width: 100%;
-        text-align: center;
-    }
-    .breadcrumbs {
-        display: none;
-    }
+    max-width: $content-max-width;
 }
 
 
 
-/*
-    Article
-*/
-article {
-    margin: 1rem 0 4rem 0
-}
+// .site-content {
+//     flex: 1;
+//     max-width: var(--content-max-width);
+//     padding: 0 var(--content-padding);
+//     margin: 0 auto;
+// }
+// @media (max-width: 500px) {     // CAN'T USE CSS VARIABLE HERE: --content-max-width
+//     .site-content {margin: 0;}  // Fixing overflows on small screens
+// }
 
-article h1 {
-    margin: 0;
-}
 
-article p {
-    text-align: justify;
-}
+// /* 
+//     Header stuff 
+// */
+// .site-header {
+//     margin-bottom: 2rem;
+// }
+// .wrapper {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 var(--content-padding);
+//     display: flex;
+//     flex-wrap: nowrap;
+// }
 
-article time {
-    color: var(--primary-30);
-}
+// .wrapper * {
+//     display: inline-block;
+//     line-height: var(--header-height);
+// }
 
-.readmore {
-    padding: 3px;
-    color: var(--background);
-    background-color: var(--accent);
-}
+// .breadcrumbs {
+//     flex: 1 0 0;
+//     padding: 0 30px;
+//     display: flex;
+//     overflow: hidden;
+// }
 
-/*
-    Project
-*/
-.project-tile p {
-    color: var(--primary-30);
-}
+// #menu-btn, .menu-btn {
+//     display: none;
+// }
 
-.project > h1 {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
 
-.project > h2 {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-}
+// .navbar {
+//     flex: 0 0 auto;
+// }
 
-hr {
-    background-color: var(--primary-30);
-}
+// .navbar li {
+//     padding: 0 15px;
+// }
 
-/*
-    Gallery
-*/
-.project-gallery {
-    // CSS GRID STUFF
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1rem;
-}
 
-.project-gallery img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
+// /* Mobile navigation menu */
+// @media all and (max-width: 800px) {
+//     .wrapper {
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//     }
+//     .menu-btn {
+//         display: inline-block;
+//     }
+//     #menu-btn:not(:checked) ~ .navbar {
+//         display: none;
+//     }
+//     #menu-btn:checked ~ .navbar {
+//         display: inline-block;
+//     }
 
-/*
-    Blog
-*/
-.site-content.blog {
-    max-width: 800px;
-}
+//     .navbar {
+//         flex-basis: 100%;
+//     }
+//     .navbar * {
+//         width: 100%;
+//         text-align: center;
+//     }
+//     .breadcrumbs {
+//         display: none;
+//     }
+// }
 
-.blogpost-list {
-    list-style: none;
-}
 
-.blogpost-list li {
-    display: flex;
-    padding: 5px 0;
-}
 
-.blogpost-header {
-    margin-bottom: 20px;
-}
+// /*
+//     Article
+// */
+// article {
+//     margin: 1rem 0 4rem 0
+// }
 
-.blogpost-list li :nth-child(1) {
-    flex: 0 0 150px;
-}
-.blogpost-list li :nth-child(2) {
-    flex: 0 0 500px;
-}
-.blogpost-list li :nth-child(3) {
-    flex: 0 0 150px;
-}
+// article h1 {
+//     margin: 0;
+// }
 
-/*
-    Footer
-*/
-.site-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    color: var(--accent);
-    background-color: var(--primary-80);
-}
+// article p {
+//     text-align: justify;
+// }
+
+// article time {
+//     color: var(--primary-30);
+// }
+
+// .readmore {
+//     padding: 3px;
+//     color: var(--background);
+//     background-color: var(--accent);
+// }
+
+// /*
+//     Project
+// */
+// .project-tile p {
+//     color: var(--primary-30);
+// }
+
+// .project > h1 {
+//     margin-top: 2rem;
+//     margin-bottom: 4rem;
+// }
+
+// .project > h2 {
+//     margin-top: 4rem;
+//     margin-bottom: 1rem;
+// }
+
+// hr {
+//     background-color: var(--primary-30);
+// }
+
+// /*
+//     Gallery
+// */
+// .project-gallery {
+//     // CSS GRID STUFF
+//     display: grid;
+//     align-items: center;
+//     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+//     grid-gap: 1rem;
+// }
+
+// .project-gallery img {
+//     width: 300px;
+//     height: 300px;
+//     object-fit: cover;
+// }
+
+// /*
+//     Blog
+// */
+// .site-content.blog {
+//     max-width: 800px;
+// }
+
+// .blogpost-list {
+//     list-style: none;
+// }
+
+// .blogpost-list li {
+//     display: flex;
+//     padding: 5px 0;
+// }
+
+// .blogpost-header {
+//     margin-bottom: 20px;
+// }
+
+// .blogpost-list li :nth-child(1) {
+//     flex: 0 0 150px;
+// }
+// .blogpost-list li :nth-child(2) {
+//     flex: 0 0 500px;
+// }
+// .blogpost-list li :nth-child(3) {
+//     flex: 0 0 150px;
+// }
+
+// /*
+//     Footer
+// */
+// .site-footer {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100px;
+//     color: var(--accent);
+//     background-color: var(--primary-80);
+// }

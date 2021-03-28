@@ -1,44 +1,261 @@
-// Body resets
-// Update the foundational and global aspects of the page.
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-    font-size: 100%; // browser default (16px)
-}
-
+/*
+    PAGE LAYOUT
+*/
 body {
-  margin: 0;
-  color: var(--primary);
-  background-color: var(--background);
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-// No `:visited` state is required by default (browsers will use `a`)
-a {
-  color: var(--primary);
-  text-decoration: none;
+.site-content {
+    flex: 1;
+    max-width: $content-max-width;
+    padding: 0 $content-padding;
+    margin: 0 auto;
+}
 
-  // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
+.site-header .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $header-max-width;
+    padding: 0 $content-padding;
+    margin: 0 auto;
+    line-height: $header-height;
+}
 
-  strong {
-    color: inherit;
-  }
+
+/*
+    GENERAL
+*/
+h1,
+h2, 
+h3, 
+h4 {
+    margin: 2rem 0 1rem 0;
+}
+
+p {
+    margin: 1rem 0;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  margin-bottom: var(--spacer);
-  border-radius: var(--border-radius);
+    max-width: 100%;
 }
+
+article {
+    padding: $content-padding 0;
+}
+    article h1 {
+        margin-bottom: 0.2rem;
+    }
+
+    .readmore {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        margin-top: 0.7rem;
+    }
+
+/*
+    Utilities
+*/
+.wider {
+    @media (min-width: $content-max-width) {     // DESKTOP SIZE
+        // Taken from https://stackoverflow.com/a/36530632/5539470
+        width: 100vw;
+        max-width: 800px;
+        margin-left: 50%;
+        padding: $content-padding;
+        transform: translateX(-50%);
+    }
+}
+
+
+/*
+    Gallery
+*/
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    justify-items: center;
+}
+
+.project-gallery img {
+    max-width: 100%;
+}
+
+.project-gallery img:nth-of-type(1) {
+    grid-column: span 5;
+}
+
+
+/*
+    HEADER
+*/
+.site-header * {
+    // Clear default styling for <li> and <a>
+    text-decoration: none;
+    list-style: none;
+}
+    .breadcrumbs {
+        display: none;
+    }
+
+    // Menu toggling logic (using checkbox)
+    #menu-btn:not(:checked) ~ .navbar {
+        display: none;
+    }
+    .menu-btn-cb {
+        display: none;      // Hide checkbox element
+    }
+
+    // Vertical navbar
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .navbar a {
+            display: block;     // Fill the container
+            padding: 0 1rem;
+        }
+
+@media (min-width: 900px) {     // DESKTOP SIZE
+    
+    .site-header .wrapper {
+        flex-wrap: nowrap;
+    }
+        .breadcrumbs {
+            display: flex;
+            flex: 1;
+            padding: 0 1rem 0 2rem;
+        }
+        .menu-btn {
+            display: none;
+        }
+
+        // Horizontal navbar
+        #menu-btn:not(:checked) ~ .navbar {
+            display: block;
+        }
+        .navbar {
+            width: auto;
+        }
+            .navbar ul {
+                flex-direction: row;
+            }
+}
+
+
+/*
+    PROJECTS PAGE
+*/
+.site-content.projects {
+    padding: 3rem $content-padding;
+}
+
+.project-tile h1 {
+    margin: 0;
+}
+
+
+/*
+    BLOG PAGE
+*/
+// This CSS part is exceptionally implemented desktop-first (easier)
+.site-content.blog {
+    max-width: $content-wide-max-width;
+    padding: 3rem $content-padding;
+}
+
+.bloglist {
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+    $cell-padding-h: 0.8rem;
+    .bloglist th {
+        padding: 2rem $cell-padding-h;
+    }
+
+    .bloglist td {
+        padding: 0.4rem $cell-padding-h;
+    }
+
+
+
+// MOBILE LAYOUT (collapsed table)
+@media (max-width: $content-max-width) {
+    .bloglist * {
+        display: block; 
+    }
+    .bloglist thead {
+        display: none;
+    }
+
+    .bloglist tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: $content-padding 0;
+    }
+
+    // Change element order: date and category below title
+    .bloglist tr :nth-child(1) {
+        order: 2;
+    }
+    .bloglist tr :nth-child(2) {
+        order: 1;
+        width: 100%;
+    }
+    .bloglist tr :nth-child(3) {
+        order: 3;
+    }
+}
+
+
+
+// html {
+//     font-size: 100%;    // use browser default font size
+// }
+
+// body {
+//   margin: 0;
+//   color: var(--primary);
+//   background-color: var(--background);
+//   -webkit-text-size-adjust: 100%;
+//       -ms-text-size-adjust: 100%;
+// }
+
+// // No `:visited` state is required by default (browsers will use `a`)
+// a {
+//   color: var(--primary);
+//   text-decoration: none;
+
+//   // `:focus` is linked to `:hover` for basic accessibility
+//   &:hover,
+//   &:focus {
+//     color: var(--accent);
+//   }
+
+//   strong {
+//     color: inherit;
+//   }
+// }
+
+// img {
+//   display: block;
+//   max-width: 100%;
+//   margin-bottom: var(--spacer);
+//   border-radius: var(--border-radius);
+// }
 
 // table {
 //   margin-bottom: 1rem;
@@ -64,13 +281,23 @@ img {
 //   border-bottom-color: currentColor;
 // }
 
-mark {
-  padding: .15rem;
-  background-color: var(--yellow-100);
-  border-radius: .125rem;
-}
+// mark {
+//   padding: .15rem;
+//   background-color: var(--yellow-100);
+//   border-radius: .125rem;
+// }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
+// ul {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .site-header {
+//     background: var(--primary-80);
+//     color: var(--accent);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// }
+
+// .site-header * {
+//     color: var(--accent);
+// }

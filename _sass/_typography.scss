@@ -1,3 +1,9 @@
+/*
+    GENERAL
+*/
+html {
+    font-size: 100%;    // use browser default font size
+}
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -22,29 +28,26 @@ p {
     text-align: justify;
 }
 
-/* 
-    Header stuff 
+.readmore {
+    font-weight: bold;
+}
+
+
+/*
+    HEADER
 */
 .site-header {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
-}
-.site-header a {
-    text-decoration: none;
 }
 .logo, .breadcrumbs {
     font-size: 2.074rem;
     white-space: nowrap;
 }
 
-.navbar{
-    font-size: 1rem;
-}
-
-
 
 /*
-    Project layout
+    PROJECT PAGE
 */
 .project > h1 {
     font-size: 2.488rem;
@@ -57,19 +60,8 @@ p {
 
 
 /*
-    Blogpost header
+    BLOG PAGE
 */
-.blogpost-list a {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-.blogpost-header * {
-    color: var(--primary);
-}
-.blogpost-list li {
-    color: var(--primary-30);
-}
-.blogpost-list li a {
-    font-weight: 700;
-    // font-weight: bold;
+.bloglist td:nth-child(2) {
+    font-weight: bold;
 }

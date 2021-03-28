@@ -1,12 +1,15 @@
-:root {
-    --header-height: 100px;
-    --content-padding: 1.2rem;
-    --content-max-width: 500px;  // approx. 65 characters   
 
-    --primary: #001824;
-    --accent: #e4b062;
-    --background: #F6F4F3;
+// Layout
+$header-height: 5.5rem;
+$header-max-width: 1200px;
+$content-padding: 1.2rem;
+$content-max-width: 550px;
+$content-wide-max-width: 1000px;    // Used in blog page
 
-    --primary-80: #31444d;
-    --primary-30: #acb2b5;
-}
+// Color palette
+$primary: #001824;
+$accent: #e4b062;
+$background: #f6f4f3;
+
+$primary-light1: #31444d;
+$primary-light2: #acb2b5;
