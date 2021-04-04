@@ -15,14 +15,14 @@
         {% assign img_counter = img_counter | plus: 1 %}
         {% if img_counter == 1 %}
           <!-- first image == big image -->
-          <a class="big-image" href="{{ file.path }}">
+          <a class="big-image lgimg" href="{{ file.path }}">
             <img src="{{ file.path }}" alt="{{ filename }}" title="{{ filename }}"/>
           </a>
 
           <!-- container for images (thumbnails) -->
           <div class="thumbs">
         {% else %}
-            <a href="{{ file.path }}">
+            <a class="lgimg" href="{{ file.path }}">
               <img src="{{ file.path }}" alt="{{ filename }}" title="{{ filename }}"/>
             </a>  
         {% endif %}
@@ -35,6 +35,8 @@
 <!-- Initialize gallery stuff (lightgallery) -->
 <script type="text/javascript">
   lightGallery(document.getElementById('project-gallery', {
+    selector: 'lgimg',
+    selectWithin: '.thumb',
     mode: 'lg-slide',
     speed: 100
   })); 
