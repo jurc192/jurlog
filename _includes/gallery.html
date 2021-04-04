@@ -1,5 +1,5 @@
 <!-- Taken and adapted from: https://jekyllcodex.org/without-plugin/image-gallery -->
-<div id="test" class="image-gallery wider">
+<div id="project-gallery" class="gallery wider">
   {% for file in site.static_files %}
     {% if file.path contains include.folder %}
       {% if file.extname == '.jpg' or 
@@ -18,5 +18,8 @@
   {% endfor %}
 </div>
 <script type="text/javascript">
-  lightGallery(document.getElementById('test')); 
+  lightGallery(document.getElementById('project-gallery', {
+    mode: 'lg-slide',
+    speed: 100
+  })); 
 </script>
