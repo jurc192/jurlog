@@ -9,7 +9,7 @@ github_username:  jurc192
 navbar_pages:
   - projects.html
   - blog.html
-  - about.md
+  - about.html
 
 permalink: /:categories/:year-:month-:day-:title/
 

@@ -176,6 +176,17 @@ article {
 
 
 /*
+    FOOTER
+*/
+.site-footer {
+    display: flex;
+    height: 80px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*
     PROJECTS PAGE
 */
 .site-content.projects {
@@ -262,7 +273,7 @@ article {
     max-width: $content-wide-max-width;
 }
 
-    .about * {
+    .about > * {
         padding: 8rem 2rem;
         margin: 0;
     }
