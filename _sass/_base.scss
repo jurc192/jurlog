@@ -63,7 +63,7 @@ article {
     @media (min-width: $content-max-width) {     // DESKTOP SIZE
         // Taken from https://stackoverflow.com/a/36530632/5539470
         width: 100vw;
-        max-width: 800px;
+        max-width: 700px;
         margin-left: 50%;
         padding: $content-padding;
         transform: translateX(-50%);
@@ -96,7 +96,7 @@ article {
 
 @media (min-width: $content-max-width) {        // DESKTOP SIZE
     .gallery .big-image {
-        height: 500px;
+        height: 400px;
     }
     .thumbs {
         flex-direction: row;
