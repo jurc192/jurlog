@@ -180,11 +180,24 @@ article {
 */
 .site-footer {
     display: flex;
-    height: 80px;
+    // height: 80px;
+    padding: $content-padding;
 
     justify-content: center;
     align-items: center;
 }
+
+.site-footer p {
+    width: 600px;
+    margin: 0;
+    text-align: justify;
+    
+}
+
+// .site-footer img {
+//     width: 30px;
+//     height: 30px;
+// }
 
 /*
     PROJECTS PAGE
@@ -268,20 +281,23 @@ article {
     ABOUT PAGE
 */
 .about {
-    display: flex;
-    align-items: flex-start;
     max-width: $content-wide-max-width;
 }
 
-    .about > * {
+.top {
+    display: flex;
+    align-items: flex-start;
+}
+
+    .top > * {
         padding: 8rem 2rem;
         margin: 0;
     }
 
-    .about img {
+    .top img {
         width: 300px;
     }
 
-    .about p {
+    .top p {
         padding-left: 4rem;
     }
