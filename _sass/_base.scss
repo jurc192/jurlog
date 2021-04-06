@@ -180,24 +180,29 @@ article {
 */
 .site-footer {
     display: flex;
-    // height: 80px;
-    padding: $content-padding;
-
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: $content-padding;
 }
-
-.site-footer p {
-    width: 600px;
-    margin: 0;
-    text-align: justify;
-    
-}
-
-// .site-footer img {
-//     width: 30px;
-//     height: 30px;
-// }
+    .site-footer > a {
+        display: block;
+    }
+    .site-footer img {
+        margin: 0.5rem;
+        width: 30px;
+        height: 30px;
+    }
+    .site-footer p {
+        width: 100%;
+        max-width: $content-max-width;
+        margin: 0;
+        text-align: justify;
+        
+        @media (min-width: $content-max-width) {
+            margin-left: 1rem;
+        }
+    }
 
 /*
     PROJECTS PAGE
