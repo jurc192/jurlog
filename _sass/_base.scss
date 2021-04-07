@@ -148,7 +148,7 @@ article {
             padding: 0 1rem;
         }
 
-@media (min-width: 900px) {     // DESKTOP SIZE
+@media (min-width: $header-nav-breakpoint) {     // DESKTOP SIZE
     
     .site-header .wrapper {
         flex-wrap: nowrap;
@@ -318,18 +318,16 @@ article {
         margin: 4rem 0;
     }
 
-    @media (min-width: $content-wide-max-width) {   // DESKTOP size
+    @media (min-width: $header-nav-breakpoint) {   // DESKTOP size
         .about {
             display: flex;
             align-items: flex-start;
-        }
-        
-        .my_id {
-            width: auto;
-        }
-
-        .about p {
-            width: 500px;
-        }
-
+        }        
+            .my_id {
+                width: auto;
+            }
+            .about > p {
+                margin-top: 5rem;
+                margin-left: 4rem;
+            }
     }
