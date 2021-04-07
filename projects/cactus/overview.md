@@ -14,4 +14,4 @@ Creating fake-plants, cactus sculptures, with LEDs. A project for practicing ite
 
 ## Gallery
 
-{% include gallery.html folder="projects/cactus/gallery/" %}
+{% include gallery.html folder="/projects/cactus/gallery/" %}
