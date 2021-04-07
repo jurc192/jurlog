@@ -208,7 +208,7 @@ article {
     PROJECTS PAGE
 */
 .site-content.projects {
-    padding: 3rem $content-padding;
+    padding: $page-padding-vertical $content-padding;
 }
 
 .project-tile h1 {
@@ -232,7 +232,7 @@ article {
 // This CSS part is exceptionally implemented desktop-first (easier)
 .site-content.blog {
     max-width: $content-wide-max-width;
-    padding: 3rem $content-padding;
+    padding: $page-padding-vertical $content-padding;
 }
 
 .bloglist {
@@ -287,31 +287,38 @@ article {
 */
 .about {
     max-width: $content-wide-max-width;
+    padding: $page-padding-vertical $content-padding;
 }
 
     // id part
-    .profile_photo {
-        width: 300px;
-        margin: 0 auto;
+    .my_id {
+        margin: 2rem 0;
+    }
+        .profile_photo {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .my_id p {
+            text-align: center;
+        }
+        .social {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .social img {
+            display: block;
+            margin: 0 auto;
+            width: 25px;
+        }
+
+    // text part
+    .about > p {
+        max-width: $content-max-width;
+        margin: 4rem 0;
     }
 
-    .my_id p {
-        text-align: center;
-    }
-
-    .social {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .social img {
-        display: block;
-        margin: 0 auto;
-        width: 25px;
-    }
-
-    @media (min-width: $content-max-width) {
+    @media (min-width: $content-wide-max-width) {   // DESKTOP size
         .about {
             display: flex;
             align-items: flex-start;
