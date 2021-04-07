@@ -33,11 +33,8 @@
 </div>
 
 <!-- Initialize gallery stuff (lightgallery) -->
-<script type="text/javascript">
-  lightGallery(document.getElementById('project-gallery', {
-    selector: 'lgimg',
-    selectWithin: '.thumb',
-    mode: 'lg-slide',
-    speed: 100
-  })); 
+<script>
+    window.addEventListener('load', function() {
+      baguetteBox.run('#project-gallery');
+    });
 </script>
