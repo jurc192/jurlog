@@ -11,8 +11,8 @@ How to make a better version of the cactus? Honestly, I'm afraid to even touch t
 This time we used a **modeling clay** and went for a fancier shape of the cactus. It wasn't obvious how and where to start, so we took the "just do it and pray" approach. Two plastic bottles were connected together using random stuff (cardboard, piping foam leftovers, lots of tape) and covered with the modeling clay.
 
 <div class="wider side-by-side">
-    <img src="../images/plastic_base.jpg" alt="plastic bottles used as a base" title="Plastic bottles used as a base"/>
-    <img src="../images/clay_base.jpg" alt="Cactus sculpture made with modeling clay" title="Cactus sculpture made with modeling clay"/>
+    <img src={{ "../images/plastic_base.jpg" | relativize_url }} alt="plastic bottles used as a base" title="Plastic bottles used as a base"/>
+    <img src={{"../images/clay_base.jpg"  | relative_url }} alt="Cactus sculpture made with modeling clay" title="Cactus sculpture made with modeling clay"/>
 </div>
 
 It looked pretty well and robust enough, but there was an issue: how to get the bottles out? Oh, by the way, the bottle was previously used for a home-made schnaps, so the whole thing smelled like booze. A lot.

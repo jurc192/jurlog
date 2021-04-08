@@ -4,13 +4,9 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-I only had two plants in my room and they both died within a month or so. While throwing them away, Vita remarked that even a cactus wouldn't last long in my hands, except if it involved LEDs and electronic stuff... That's when it struck me: "it has to be done! We *need* to make the cactus with LEDs"! 
+I only had two plants in my room and they both died within a month or so. Maybe, if they involved LEDs, sensors and wires I would think about them more often. What started as a stupid joke, ended up as a cool one-day project: making a cactus with LEDs!
 
-IMAGE OF MY DEAD PLANTS
-
-The goal for me was not to overthink and plan too much, but just hack something together in a single day. That's because I always want to *know* everything, which often results in *doing* nothing. Thanks to Vita, I didn't fall into the (over)enginerring rabbit holes this time :)
-
-
+Because I always want to *know* everything, which often results in *doing* nothing, the plan was to hack something together in a single day. To deal with imperfection and avoiding theory. Thanks to Vita, I didn't fall into the over-enginerring rabbit holes this time :)
 
 
 ## How it's made
@@ -23,7 +19,18 @@ We gathered some random stuff from around the house:
 
 I've got no idea why I had that isolation foam at home, but it was an okay (and cheap) material for the job. The diffuser caps were salvaged from some old xmas lights I believe.
 
-IMAGE OF STUFF
+<!-- <div class="wider side-by-side">
+<img src={{ "/assets/images/profile_photo.jpg" | relative_url }} alt="profile_photo"/>
+<img src={{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }} alt="LED diffuser caps" title="LED diffuser caps"/>
+<img src={{ "/assets/images/projects/cactus/foam_in_a_bowl.png"  | relative_url }} alt="Piping isolation foam stuck in a plastic bowl" title="Piping isolation foam stuck in a plastic bowl"/>
+</div> -->
+{% capture img1 %}
+{{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }}
+{% endcapture %}
+{% capture img2 %}
+{{ "/assets/images/projects/cactus/foam_in_a_bowl.png" | relative_url }}
+{% endcapture %}
+{% include sidebyside.html src1=img1 src2=img2 %}
 
 IMAGE OF WORKING PROCESS
 
