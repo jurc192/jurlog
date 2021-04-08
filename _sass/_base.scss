@@ -60,6 +60,9 @@ article {
     Utilities
 */
 .wider {
+    // max-height: 400px;
+    // object-fit: cover;
+    // margin: 0 auto;
     @media (min-width: $content-max-width) {     // DESKTOP SIZE
         // Taken from https://stackoverflow.com/a/36530632/5539470
         width: 100vw;
@@ -73,6 +76,7 @@ article {
 .side-by-side {
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 .side-by-side img {
     width: 50%;
@@ -92,6 +96,7 @@ article {
 */
 .gallery {
     padding: 0 $content-padding;
+    max-height: none;
 }
 
 .gallery a {
