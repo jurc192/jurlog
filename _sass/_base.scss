@@ -70,6 +70,22 @@ article {
     }
 }
 
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+}
+.side-by-side img {
+    width: 50%;
+    max-height: 300px;
+    padding: 0.5rem;
+    object-fit: cover;
+}
+.side-by-side img:first-of-type {
+    padding-left: 0;
+}
+.side-by-side img:last-of-type {
+    padding-right: 0;
+}
 
 /*
     Gallery
