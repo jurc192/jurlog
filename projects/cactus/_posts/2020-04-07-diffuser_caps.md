@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 The first catctus (*Frankencactus*) turned out surprisingly well, in the sense of adding to the conzyness of the space. Despite it's technical flaws, it was appreciated by visitors and flatmates. Success!
 
-Since the motivation for building the second cactus iteration was high, I wanted to become diffuser-independentTM. Let me explain. The diffuser caps were limited, since they were scavenged from some old christmas lights and I could not find anything similar on the internet. Weighting between different LED diffusion options, like 3D printing, paper and others, the idea of casting/molding seemed the most fun.
+Since the motivation for building another cactus was high, I wanted to become diffuser-independentTM. Let me explain. The diffuser caps were limited, since they were scavenged from some old christmas lights and I could not find anything similar on the internet. Weighting between different LED diffusion options, like 3D printing, paper and others, the idea of casting/molding seemed the most fun.
 
 
 

@@ -18,7 +18,3 @@ defaults:
       path: "_posts"
     values:
       category: "blog"
-
-
-plugins:
-  - jekyll-relative-links
