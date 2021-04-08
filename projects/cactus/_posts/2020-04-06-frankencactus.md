@@ -19,11 +19,6 @@ We gathered some random stuff from around the house:
 
 I've got no idea why I had that isolation foam at home, but it was an okay (and cheap) material for the job. The diffuser caps were salvaged from some old xmas lights I believe.
 
-<!-- <div class="wider side-by-side">
-<img src={{ "/assets/images/profile_photo.jpg" | relative_url }} alt="profile_photo"/>
-<img src={{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }} alt="LED diffuser caps" title="LED diffuser caps"/>
-<img src={{ "/assets/images/projects/cactus/foam_in_a_bowl.png"  | relative_url }} alt="Piping isolation foam stuck in a plastic bowl" title="Piping isolation foam stuck in a plastic bowl"/>
-</div> -->
 {% capture img1 %}
 {{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }}
 {% endcapture %}
@@ -32,13 +27,13 @@ I've got no idea why I had that isolation foam at home, but it was an okay (and 
 {% endcapture %}
 {% include sidebyside.html src1=img1 src2=img2 %}
 
-IMAGE OF WORKING PROCESS
+![workbench]({{ "/assets/images/projects/cactus/workbench.jpeg" | relative_url }}){: class="wider"}
 
 First, we made a hole into the rice bowl's lid with a utility knife, shoved the isolation foam inside and somehow shape it into a cactus. We then drilled the holes into the foam, fitting the diffuser caps nicely without gluing them or anything, so they can be replaced.
 
-An 5mm LED diode fits inside the diffuser cap and all of them (<20) are connected to an old 5V phone charger (in parallel, with XXX resistors). However, when it came to electronics I spotted myself dreaming about custom PCB and connectors and whatnot. I took a deep breath, said "NO", and did the opposite: quickest and dirtiest wiring ever, using a duct tape and massive blobs of solder :D In retrospect, this decision was the best part the project.
+An 5mm LED diode fits inside the diffuser cap and all of them are connected to an old 5V phone charger. However, when it came to electronics I spotted myself dreaming about a custom PCB and connectors and whatnot... I took a deep breath, said "NO", and did the opposite: quickest and dirtiest wiring ever, using a ~~duct~~ tape and massive blobs of solder :D In retrospect, this was the best decision of the project.
 
-
+![wiring]({{ "/assets/images/projects/cactus/crappy_wiring.jpg" | relative_url }}){: class="wider"}
 
 ## Where's the magic
 
@@ -47,5 +42,13 @@ It's not rocket science, just a bunch of LEDs in a cactus-shaped foam, right? We
 The best part was switching it on for the first time: half of the LEDs did not work at all, which was not surprising if I think about the wiring efforts. However, some LEDs blinked in more-or-less regular intervals, causing a very pleasant, candle-like flickering effect. It looks even cooler that way, actually.
 
 So, what was the last time you made something blink without a microcontroller, huh? ;)
+
+{% capture img1 %}
+{{ "/assets/images/projects/cactus/flickering.gif" | relative_url }}
+{% endcapture %}
+{% capture img2 %}
+{{ "/assets/images/projects/cactus/finished.jpg" | relative_url }}
+{% endcapture %}
+{% include sidebyside.html src1=img1 src2=img2 class="taller" %}
 
 <!--more-->

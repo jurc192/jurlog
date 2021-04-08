@@ -60,9 +60,6 @@ article {
     Utilities
 */
 .wider {
-    // max-height: 400px;
-    // object-fit: cover;
-    // margin: 0 auto;
     @media (min-width: $content-max-width) {     // DESKTOP SIZE
         // Taken from https://stackoverflow.com/a/36530632/5539470
         width: 100vw;
@@ -71,6 +68,13 @@ article {
         padding: $content-padding;
         transform: translateX(-50%);
     }
+}
+img.wider {
+    max-height: 600px;
+    object-fit: contain;
+}
+.wider.taller img {
+    max-height: 600px;
 }
 
 .side-by-side {
