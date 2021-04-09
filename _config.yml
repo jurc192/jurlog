@@ -3,7 +3,7 @@ email: jurvidmar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Jure Vidmar's personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jurlog.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jurc192
 
 navbar_pages:
