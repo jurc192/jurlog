@@ -136,7 +136,6 @@ img.wider {
         }
 }
 
-
 /*
     HEADER
 */
@@ -155,6 +154,10 @@ img.wider {
     }
     .menu-btn-cb {
         display: none;      // Hide checkbox element
+    }
+    .menu-btn svg {
+        display: block;
+        height: 100%;
     }
 
     // Vertical navbar

@@ -39,6 +39,10 @@ article time {
     }
 }
 
+.footnotes {
+    color: $primary-light2;
+}
+
 
 /*
     HEADER
@@ -50,6 +54,12 @@ article time {
 
     .site-header a {
         color: $accent;
+    }
+
+    .menu-btn svg {
+        display: block;
+        height: 100%;
+        fill: $accent;
     }
 
 /*

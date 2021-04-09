@@ -23,7 +23,7 @@ It looked pretty well and robust enough, but there was an issue: how to get the 
 
 We detached the "arm" of the cactus by somehow cutting it off and pulled the main bottle out. Same thing for the smaller bottle and the joint between the two. Somehow. Not without damage though, but nothing that couldn't be fixed with more clay :)
 
-![pulling out the bottle](/assets/images/projects/cactus/bottle_pull_out.jpg){: class="wider"}
+![pulling out the bottle](/assets/images/projects/cactus/bottle_pull_out.jpg)
 
 In order to make it more robust, we used an actual **flower pot** and hacked together a cardboard mount for the cactus.  
 
@@ -74,7 +74,7 @@ This time I've put some more love into the wiring:
 
 Wiring and soldering everything together took about 6 hours. The most annoying and time-consuming task was getting the wires through the cactus (small hole IN, bottom opening OUT). Is there a smart way to do this? Anyways, **all of the LEDs work**! No accidental blinking!
 
-[^1]: 220V, X A. Opened it just enough to reach the power rails, otherwise left untouched and inside enclosure.
+[^1]: A cheap chinese power supply, 5V, 2A (originally included with an USB hub, makes a high-pitched noise when powered). Removed the metal conectors and got the wires out, but everything is still in the enclosure, for safety reasons.
 [^2]: 22 awg, stranded silicone wire
 
 
