@@ -83,3 +83,4 @@ Wiring and soldering everything together took about 6 hours. The most annoying a
 
 That was it, it turned out pretty well I think. Look at the photos :)
 
+{% include gallery.html folder="/assets/images/projects/cactus/das-mas/" %}
