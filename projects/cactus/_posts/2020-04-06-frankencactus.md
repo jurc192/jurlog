@@ -23,11 +23,11 @@ I've got no idea why I had that isolation foam at home, but it was an okay (and 
 {{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }}
 {% endcapture %}
 {% capture img2 %}
-{{ "/assets/images/projects/cactus/foam_in_a_bowl.png" | relative_url }}
+{{ "/assets/images/projects/cactus/foam_in_a_bowl.jpg" | relative_url }}
 {% endcapture %}
 {% include sidebyside.html src1=img1 src2=img2 %}
 
-![workbench]({{ "/assets/images/projects/cactus/workbench.jpeg" | relative_url }}){: class="wider"}
+![workbench]({{ "/assets/images/projects/cactus/workbench.jpg" | relative_url }}){: class="wider"}
 
 First, we made a hole into the rice bowl's lid with a utility knife, shoved the isolation foam inside and somehow shape it into a cactus. We then drilled the holes into the foam, fitting the diffuser caps nicely without gluing them or anything, so they can be replaced.
 
