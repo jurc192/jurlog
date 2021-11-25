@@ -15,7 +15,7 @@ layout: default
     <article>
         <h1><a href="{{ l.url | relative_url }}">{{ l.title }}</a></h1>
         <time datetime="{{ l.date | date_to_xmlschema }}">{{ l.date | date: "%d.%m.%Y" }}</time>
-        {{ l.excerpt }}
+        {{ l.content }}
     </article>
 {% endfor %}
 
