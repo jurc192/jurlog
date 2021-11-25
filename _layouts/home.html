@@ -4,7 +4,7 @@ layout: default
 
 {{ content }}
 
-{% for post in site.posts %}
+{% for post in site.posts limit: 5 %}
     <article>
         <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
@@ -12,3 +12,5 @@ layout: default
         <a class="readmore" href="{{ post.url | relative_url }}">Read more >></a>
     </article>
 {% endfor %}
+
+<a class="showallposts" href="{{ site.url }}/blog">Show all posts</a>
