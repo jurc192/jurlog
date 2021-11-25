@@ -73,6 +73,14 @@ article time {
 /*
     HOME PAGE
 */
+.showallposts {
+    color: $accent;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $accent;
+    }
+}
 
 /*
     PROJECTS PAGE
