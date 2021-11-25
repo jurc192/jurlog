@@ -1,6 +1,7 @@
 ---
 title: "Das-mas cactus"
 layout: post
+excerpt_separator: <!--more-->
 ---
 
 How to make a better version of the cactus? Honestly, I'm afraid to even touch the first one: it flips over easily, diffuser caps fall out sometimes and half of the lights don't work anyways. Improving on this shouldn't be too hard.

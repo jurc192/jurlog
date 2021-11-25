@@ -1,7 +1,6 @@
 ---
 title: "Home-made diffuser caps for LEDs"
 layout: post
-excerpt_separator: <!--more-->
 ---
 
 

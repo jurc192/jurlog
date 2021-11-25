@@ -1,7 +1,6 @@
 ---
 title: "Frankencactus: crappy, cute and blinking without a microcontroller"
 layout: post
-excerpt_separator: <!--more-->
 ---
 
 I only had two plants in my room and they both died within a month or so. Maybe, if they involved LEDs, sensors and wires I would think about them more often. What started as a stupid joke, ended up as a cool one-day project: making a cactus with LEDs!
