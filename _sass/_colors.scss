@@ -40,6 +40,10 @@ article time {
     &:hover,
     &:focus {
         color: $primary;
+        background: $accent-dark1;
+    }
+    &:active {
+        background: $accent-dark2;
     }
 }
 
@@ -77,6 +81,7 @@ article time {
 /*
     HOME PAGE
 */
+.footnote,
 .showallposts {
     color: $accent;
     &:hover,
