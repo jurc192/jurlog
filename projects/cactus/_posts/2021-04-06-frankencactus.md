@@ -18,21 +18,13 @@ We gathered some random stuff from around the house:
 
 I've got no idea why I had that isolation foam at home, but it was an okay (and cheap) material for the job. The diffuser caps were salvaged from some old xmas lights I believe.
 
-{% capture img1 %}
-{{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }}
-{% endcapture %}
-{% capture img2 %}
-{{ "/assets/images/projects/cactus/foam_in_a_bowl.jpg" | relative_url }}
-{% endcapture %}
-{% include sidebyside.html src1=img1 src2=img2 %}
-
-![workbench]({{ "/assets/images/projects/cactus/workbench.jpg" | relative_url }}){: class="wider"}
+![workbench](/assets/images/projects/cactus/workbench.jpg){: class="wider"}
 
 First, we made a hole into the rice bowl's lid with a utility knife, shoved the isolation foam inside and somehow shape it into a cactus. We then drilled the holes into the foam, fitting the diffuser caps nicely without gluing them or anything, so they can be replaced.
 
 An 5mm LED diode fits inside the diffuser cap and all of them are connected to an old 5V phone charger. When it came to electronics, I spotted myself dreaming about a custom PCB and connectors and whatnot... I took a deep breath, said "NO", and did the opposite: quickest and dirtiest wiring ever, using a ~~duct~~ tape and massive blobs of solder :D In retrospect, this was the best decision of the project.
 
-![wiring]({{ "/assets/images/projects/cactus/crappy_wiring.jpg" | relative_url }})
+![wiring](/assets/images/projects/cactus/crappy_wiring.jpg)
 
 ## Where's the magic
 

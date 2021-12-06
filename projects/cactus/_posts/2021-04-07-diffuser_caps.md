@@ -27,7 +27,7 @@ There's a nice overview of silicone mold-making techniques by Steve McDonald in 
 
 <br>
 
-![sweater with silicone stains that won't wash off]({{ "/assets/images/projects/cactus/sweater.jpg" | relative_url }})
+![sweater with silicone stains that won't wash off](/assets/images/projects/cactus/sweater.jpg)
 
 
 
