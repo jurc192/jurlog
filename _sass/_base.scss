@@ -93,33 +93,8 @@ article {
     }
 }
 
-.side-by-side {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-}
-.side-by-side img {
-    width: 50%;
-    max-height: 300px;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-.side-by-side img:first-of-type {
-    padding-left: 0;
-}
-.side-by-side img:last-of-type {
-    padding-right: 0;
-}
-
-.portrait {
-    width: $content-max-width;
-    margin: 0 auto;
-    padding: $content-padding;
-    object-fit: contain;
-
-    img {
-        max-height: 700px;
-    }
+.wider.taller img {
+    max-height: 600px;
 }
 
 

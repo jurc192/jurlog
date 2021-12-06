@@ -34,12 +34,4 @@ The best part was switching it on for the first time: half of the LEDs did not w
 
 So, what was the last time you made something blink without a microcontroller, huh? ;)
 
-{% capture img1 %}
-{{ "/assets/images/projects/cactus/flickering.gif" | relative_url }}
-{% endcapture %}
-{% capture img2 %}
-{{ "/assets/images/projects/cactus/finished.jpg" | relative_url }}
-{% endcapture %}
-{% include sidebyside.html src1=img1 src2=img2 class="taller" %}
-
-<!--more-->
+![finished frankencactus](/assets/images/projects/cactus/flickering.gif)
