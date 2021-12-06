@@ -17,7 +17,7 @@
         {% assign img_counter = img_counter | plus: 1 %}
         {% if img_counter == 1 %}
           <!-- first image == big image -->
-          <a class="big-image lgimg" href="{{ file.path | relative_url }}">
+          <a class="big-image lgimg portrait" href="{{ file.path | relative_url }}">
             <img src="{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}"/>
           </a>
 
