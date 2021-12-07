@@ -78,6 +78,16 @@ article time {
     color: $primary-light2;
 }
 
+    .site-footer a {
+        color: $primary-light2;
+        text-decoration: underline;
+        &:hover,
+        &:focus {
+            color: $accent;
+            text-decoration-color: $accent;
+        }
+    }
+
 /*
     HOME PAGE
 */
