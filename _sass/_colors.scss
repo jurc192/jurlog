@@ -105,3 +105,14 @@ article time {
 .bloglist td:nth-child(3) {
     color: $primary-light2;   
 }
+
+.bloglist a {
+    color: $accent;
+    &:hover,
+    &:focus {
+        color: $accent-dark1;
+    }
+    &:active {
+        color: $accent-dark2;
+    }
+}
