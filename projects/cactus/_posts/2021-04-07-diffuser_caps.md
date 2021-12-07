@@ -9,7 +9,7 @@ The first catctus (*Frankencactus*) turned out surprisingly well, in the sense o
 
 Since the motivation for building another cactus was high, I wanted to become diffuser-independent<sup>TM</sup>. Huh? Well, the original "diffuser caps" (photo below) were limited, since they were scavenged from some old christmas lights and I could not find anything similar on the internet. Weighting between different LED diffusion options, like 3D printing, paper and others, the idea of casting/molding seemed the most fun.
 
-![sweater with silicone stains that won't wash off]({{ "/assets/images/projects/cactus/diffuser_caps.jpg" | relative_url }})
+![sweater with silicone stains that won't wash off](/assets/images/projects/cactus/diffuser_caps.jpg){:class="wider"}
 
 ## Silicone mold
 

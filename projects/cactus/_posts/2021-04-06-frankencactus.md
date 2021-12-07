@@ -18,7 +18,7 @@ We gathered some random stuff from around the house:
 
 I've got no idea why I had that isolation foam at home, but it was an okay (and cheap) material for the job. The diffuser caps were salvaged from some old xmas lights I believe.
 
-![workbench](/assets/images/projects/cactus/workbench.jpg)
+![workbench](/assets/images/projects/cactus/workbench.jpg){:class="wider"}
 
 First, we made a hole into the rice bowl's lid with a utility knife, shoved the isolation foam inside and somehow shape it into a cactus. We then drilled the holes into the foam, fitting the diffuser caps nicely without gluing them or anything, so they can be replaced.
 
