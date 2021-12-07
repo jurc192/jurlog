@@ -87,7 +87,13 @@ article {
 
     .sidebyside img {
         max-width: 50%;
-        padding: $content-padding;
+        padding: 0.5rem 0;
+    }
+    .sidebyside img:first-of-type {
+        padding-right: 0.5rem;
+    }
+    .sidebyside img:last-of-type {
+        padding-left: 0.5rem;
     }
 
 /*
