@@ -61,25 +61,11 @@ article {
         margin-bottom: 0.2rem;
     }
 
-    article img {
-        // Ugly: copied stuff from .wider class
-        @media (min-width: $content-max-width) {     // DESKTOP SIZE
-            // Taken from https://stackoverflow.com/a/36530632/5539470
-            width: 100vw;
-            max-width: 700px;
-            max-height: 600px;
-            margin-left: 50%;
-            transform: translateX(-50%);
-            object-fit: contain;
-        }
-    }
-
     .readmore {
         display: inline-block;
         padding: 0.4rem 0.8rem;
         margin-top: 0.7rem;
     }
-
 /*
     Utilities
 */
@@ -93,10 +79,16 @@ article {
     }
 }
 
-.wider.taller img {
-    max-height: 600px;
+.sidebyside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+    .sidebyside img {
+        max-width: 50%;
+        padding: $content-padding;
+    }
 
 /*
     Gallery
