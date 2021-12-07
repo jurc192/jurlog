@@ -86,6 +86,7 @@ article {
 }
 
     .sidebyside img {
+        object-fit: contain;
         max-width: 50%;
         padding: 0.5rem 0;
     }
@@ -344,7 +345,7 @@ article {
         }
         .social {
             display: block;
-            margin: 0 auto;
+            margin: 1rem auto;
             text-align: center;
         }
         .social img {

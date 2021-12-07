@@ -24,17 +24,14 @@ In order to make it more robust, we used an actual **flower pot** and hacked tog
 
 Drilling a hole into the pot was a real pain in the ass, but we wanted to mount a switch properly. It took a loong time and a drill-bit was getting really hot, but in the end it worked out and it looks pretty cool.
 
-
+{% include sidebyside.html 
+    src1="/assets/images/projects/cactus/pot_cardboard1.jpg"       alt1="cardboard pot 1"
+    src2="/assets/images/projects/cactus/pot_cardboard2.jpg"    alt2="cardboard pot 2"
+%}
 {% include sidebyside.html 
     src1="/assets/images/projects/cactus/switch_hole.jpg"       alt1="switch_hole"
     src2="/assets/images/projects/cactus/switch_mounted.jpg"    alt2="switch_mounted"
 %}
-
-{% include sidebyside_start.html %}
-![pot cardboard 1](/assets/images/projects/cactus/pot_cardboard1.jpg)
-![pot cardboard 2](/assets/images/projects/cactus/pot_cardboard2.jpg)
-{% include sidebyside_end.html %}
-
 
 ## Electronics
 
@@ -49,9 +46,10 @@ This time I've put some more love into the wiring:
 
 <br>
 
-![board](/assets/images/projects/cactus/board_1.jpg){:class="wider"}
-![power supply1](/assets/images/projects/cactus/power_supply1.jpg){:class="wider"}
-
+{% include sidebyside.html 
+    src1="/assets/images/projects/cactus/board_1.jpg"         alt1="electronics perfboard"
+    src2="/assets/images/projects/cactus/power_supply1.jpg"   alt2="power supply"
+%}
 
 Wiring and soldering everything together took about 6 hours. The most annoying and time-consuming task was getting the wires through the cactus (small hole IN, bottom opening OUT). Is there a smart way to do this? Anyways, **all of the LEDs work**! No accidental blinking!
 
