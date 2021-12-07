@@ -9,25 +9,31 @@ How to make a better version of the cactus? Honestly, I'm afraid to even touch t
 
 This time we used a **modeling clay** and went for a fancier shape of the cactus. We tried planning things, but the "just do it and pray" method took over: we've connected two plastic bottles together using random stuff (cardboard, piping foam leftovers, lots of tape) and covered them with the modeling clay.
 
-![plastic base](/assets/images/projects/cactus/plastic_base.jpg)
-
-![clay base](/assets/images/projects/cactus/clay_base.jpg)
-
+{% include sidebyside.html 
+    src1="/assets/images/projects/cactus/plastic_base.jpg"  alt1="plastic base"
+    src2="/assets/images/projects/cactus/clay_base.jpg"     alt2="clay base"
+%}
 
 It looked pretty well and robust enough, but there was an issue: how to get the bottles out? Oh, by the way, the bottle was previously used for a home-made schnaps, so the whole thing smelled like booze. A lot.
 
 We detached the "arm" of the cactus by somehow cutting it off and pulled the main bottle out. Same thing for the smaller bottle and the joint between the two. Somehow. Not without damage though, but nothing that couldn't be fixed with more clay :)
 
-![pulling out the bottle](/assets/images/projects/cactus/bottle_pull_out.jpg)
+![pulling out the bottle](/assets/images/projects/cactus/bottle_pull_out.jpg){:class="wider"}
 
 In order to make it more robust, we used an actual **flower pot** and hacked together a cardboard mount for the cactus.  
 
-Drilling a hole into the pot was a real pain in the ass, but we wanted to mount a switch properly. It took a loong time and a drill-bit was getting really hot, but in the end it worked out and it looks pretty cool. 
+Drilling a hole into the pot was a real pain in the ass, but we wanted to mount a switch properly. It took a loong time and a drill-bit was getting really hot, but in the end it worked out and it looks pretty cool.
 
-![pot cardboard1](/assets/images/projects/cactus/pot_cardboard1.jpg)
-![pot cardboard2](/assets/images/projects/cactus/pot_cardboard2.jpg)
-![switch hole](/assets/images/projects/cactus/switch_hole.jpg)
-![switch mounted](/assets/images/projects/cactus/switch_mounted.jpg)
+
+{% include sidebyside.html 
+    src1="/assets/images/projects/cactus/switch_hole.jpg"       alt1="switch_hole"
+    src2="/assets/images/projects/cactus/switch_mounted.jpg"    alt2="switch_mounted"
+%}
+
+{% include sidebyside_start.html %}
+![pot cardboard 1](/assets/images/projects/cactus/pot_cardboard1.jpg)
+![pot cardboard 2](/assets/images/projects/cactus/pot_cardboard2.jpg)
+{% include sidebyside_end.html %}
 
 
 ## Electronics
@@ -43,9 +49,9 @@ This time I've put some more love into the wiring:
 
 <br>
 
-![board](/assets/images/projects/cactus/board_1.jpg)
+![board](/assets/images/projects/cactus/board_1.jpg){:class="wider"}
+![power supply1](/assets/images/projects/cactus/power_supply1.jpg){:class="wider"}
 
-![power supply1](/assets/images/projects/cactus/power_supply1.jpg)
 
 Wiring and soldering everything together took about 6 hours. The most annoying and time-consuming task was getting the wires through the cactus (small hole IN, bottom opening OUT). Is there a smart way to do this? Anyways, **all of the LEDs work**! No accidental blinking!
 
