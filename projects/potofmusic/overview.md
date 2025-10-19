@@ -14,7 +14,7 @@ Music player hiding in a cooking pot. Project that has always been on my mind is
 
 ## How it turned out
 
-![front view](/assets/images/projects/potofmusic/front.jpg){:class="wider"}
+<!-- ![front view](/assets/images/projects/potofmusic/front.jpg){:class="wider"} -->
 
 ![back view](/assets/images/projects/potofmusic/back.jpg){:class="wider"}
 
