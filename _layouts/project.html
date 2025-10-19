@@ -13,7 +13,7 @@ layout: default
 {% endif %}
 {% for l in logs reversed %}
     <article>
-        <h1><a href="{{ l.url | relative_url }}">{{ l.title }}</a></h1>
+        <h1 id="{{ l.title | slugify }}"><a href="#{{ l.title | slugify }}">{{ l.title }}</a></h1>
         <time datetime="{{ l.date | date_to_xmlschema }}">{{ l.date | date: "%d.%m.%Y" }}</time>
         {{ l.content }}
     </article>

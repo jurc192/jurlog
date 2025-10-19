@@ -18,11 +18,18 @@ permalink: /blog/
         {% for p in site.posts %}
         {% assign timestamp = p.date | date: "%d.%m.%Y" %}
         {% assign category = p.categories | where_exp: "item", "item != 'projects'" %}
-            <tr>
-                <td>{{ timestamp }}</td>
-                <td><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
-                <td>{{ category }}</td>
-            </tr>    
+
+        <!-- Construct the correct url for the post heading anchor -->
+        {% assign post_anchor_url = "" %}
+            {% for x in p.categories %}
+                {% assign post_anchor_url = post_anchor_url | append: "/" | append: x %}
+            {% endfor %}
+            
+        <tr>
+            <td>{{ timestamp }}</td>
+            <td><a href="{{ post_anchor_url }}/#{{ p.title | slugify }}">{{ p.title }}</a></td>
+            <td>{{ category }}</td>
+        </tr>    
         {% endfor %}
     </tbody>
 </table>
