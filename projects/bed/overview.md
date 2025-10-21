@@ -7,12 +7,12 @@ permalink: /projects/bed/
 ---
 
 
-
 ## Description
 
-My room is tiny, my need for storage space is big. Was big. It's not a problem anymore, since I can hide lots of crap under this bed, which was designed and built from scratch!
+My tiny room needed more storage space, and my body needed a computerless hobby.
+That is how I got into woodworking. After countless youtube tutorials and hours spent in the workshop, I ended up with all my fingers intact AND a custom made wooden bed frame!
 
-Thanks to my flatmate Janez, who got me excited about woodworking, I dove into countless youtube tutorials, learned how to operate all kinds of tools and came out with a better bed.
+Thank you Janez, Izidor, and the rest of the workshop crew - you made this experience possible, educational and fun!
 
 
 
