@@ -1,6 +1,6 @@
 ---
 title: "Bed"
-summary: "An elevated wooden bed platform with storage space underneath"
+summary: "A wooden bed frame that fits into my room perfectly and provides extra storage space underneath. My first woodworking project."
 project: bed
 layout: project
 permalink: /projects/bed/
