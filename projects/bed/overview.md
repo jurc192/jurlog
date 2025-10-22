@@ -18,5 +18,10 @@ Thank you Janez, Izidor, and the rest of the workshop crew - you made this exper
 
 ## How it turned out
 
-![back view](/assets/images/projects/bed/finished_bare.jpg){:class="wider"}
+{% include image.html 
+    src="/assets/images/projects/bed/finished_bare.jpg" 
+    title="End result" 
+    caption="Final result: a custom wooden bed frame assembled in my room." 
+    alt="a DIY bed frame made out of wood in a small room, spanning from wall to wall." 
+%}
 

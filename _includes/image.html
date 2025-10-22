@@ -1,0 +1,20 @@
+<!-- Single image, clickable -->
+<!-- Usage: include image.html src="/assets/images/example.jpg" title="Sample title" caption="Sample caption" alt="Sample alt text" -->
+
+<!-- Initialize gallery stuff (baguetteBox) -->
+<script>
+    window.addEventListener('load', function() {
+      baguetteBox.run('#image', {
+        noScrollbars: true
+      });
+    });
+</script>
+
+<figure>
+    <a id="image" href="{{ include.src | relative_url }}" data-caption="{{ include.caption }}">
+        <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}">
+    </a>
+    <figcaption>{{ include.caption }}</figcaption>
+</figure>
+
+
