@@ -14,7 +14,7 @@
     <a id="image" href="{{ include.src | relative_url }}" data-caption="{{ include.caption }}">
         <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}">
     </a>
-    <figcaption>{{ include.caption }}</figcaption>
+    <figcaption>{{ include.caption | markdownify }}</figcaption>
 </figure>
 
 
